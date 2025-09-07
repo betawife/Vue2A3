@@ -1,0 +1,424 @@
+export const sunBurstData = {
+  "2024-01": {
+    "name": "2024-01",
+    "children": [
+      {
+        "name": "Jiangsu",
+        "children": [
+          { "name": "Aviation", "value": 0.830549 },
+          { "name": "Ground Transport", "value": 2.427510 },
+          { "name": "Industry", "value": 31.780901 },
+          { "name": "Power", "value": 32.057232 },
+          { "name": "Residential", "value": 0.013910 }
+        ]
+      },
+      {
+        "name": "Shanghai",
+        "children": [
+          { "name": "Aviation", "value": 0.321279 },
+          { "name": "Ground Transport", "value": 2.513579 },
+          { "name": "Industry", "value": 3.406009 },
+          { "name": "Power", "value": 4.564093 },
+          { "name": "Residential", "value": 0.000000 }
+        ]
+      },
+      {
+        "name": "Zhejiang",
+        "children": [
+          { "name": "Aviation", "value": 0.555365 },
+          { "name": "Ground Transport", "value": 2.437247 },
+          { "name": "Industry", "value": 12.823989 },
+          { "name": "Power", "value": 14.347645 },
+          { "name": "Residential", "value": 0.000000 }
+        ]
+      }
+    ]
+  },
+  "2024-02": {
+    "name": "2024-02",
+    "children": [
+      {
+        "name": "Jiangsu",
+        "children": [
+          { "name": "Aviation", "value": 0.827022 },
+          { "name": "Ground Transport", "value": 2.115614 },
+          { "name": "Industry", "value": 27.622651 },
+          { "name": "Power", "value": 26.228641 },
+          { "name": "Residential", "value": 0.012726 }
+        ]
+      },
+      {
+        "name": "Shanghai",
+        "children": [
+          { "name": "Aviation", "value": 0.319915 },
+          { "name": "Ground Transport", "value": 2.105925 },
+          { "name": "Industry", "value": 2.960363 },
+          { "name": "Power", "value": 3.734258 },
+          { "name": "Residential", "value": 0.000000 }
+        ]
+      },
+      {
+        "name": "Zhejiang",
+        "children": [
+          { "name": "Aviation", "value": 0.553004 },
+          { "name": "Ground Transport", "value": 2.048089 },
+          { "name": "Industry", "value": 11.146082 },
+          { "name": "Power", "value": 11.738980 },
+          { "name": "Residential", "value": 0.000000 }
+        ]
+      }
+    ]
+  },
+  "2024-03": {
+    "name": "2024-03",
+    "children": [
+      {
+        "name": "Jiangsu",
+        "children": [
+          { "name": "Aviation", "value": 0.820157 },
+          { "name": "Ground Transport", "value": 2.461402 },
+          { "name": "Industry", "value": 36.880795 },
+          { "name": "Power", "value": 30.299755 },
+          { "name": "Residential", "value": 0.009339 }
+        ]
+      },
+      {
+        "name": "Shanghai",
+        "children": [
+          { "name": "Aviation", "value": 0.317263 },
+          { "name": "Ground Transport", "value": 2.664836 },
+          { "name": "Industry", "value": 4.320287 },
+          { "name": "Power", "value": 4.025887 },
+          { "name": "Residential", "value": 0.000000 }
+        ]
+      },
+      {
+        "name": "Zhejiang",
+        "children": [
+          { "name": "Aviation", "value": 0.548417 },
+          { "name": "Ground Transport", "value": 2.500769 },
+          { "name": "Industry", "value": 15.306841 },
+          { "name": "Power", "value": 16.875132 },
+          { "name": "Residential", "value": 0.000000 }
+        ]
+      }
+    ]
+  },
+  "2024-04": {
+    "name": "2024-04",
+    "children": [
+      {
+        "name": "Jiangsu",
+        "children": [
+          { "name": "Aviation", "value": 0.753259 },
+          { "name": "Ground Transport", "value": 2.367403 },
+          { "name": "Industry", "value": 34.375020 },
+          { "name": "Power", "value": 28.453292 },
+          { "name": "Residential", "value": 0.006129 }
+        ]
+      },
+      {
+        "name": "Shanghai",
+        "children": [
+          { "name": "Aviation", "value": 0.293078 },
+          { "name": "Ground Transport", "value": 2.577783 },
+          { "name": "Industry", "value": 4.163221 },
+          { "name": "Power", "value": 3.167597 },
+          { "name": "Residential", "value": 0.000000 }
+        ]
+      },
+      {
+        "name": "Zhejiang",
+        "children": [
+          { "name": "Aviation", "value": 0.497551 },
+          { "name": "Ground Transport", "value": 2.400505 },
+          { "name": "Industry", "value": 13.640442 },
+          { "name": "Power", "value": 15.379644 },
+          { "name": "Residential", "value": 0.000000 }
+        ]
+      }
+    ]
+  },
+  "2024-05": {
+    "name": "2024-05",
+    "children": [
+      {
+        "name": "Jiangsu",
+        "children": [
+          { "name": "Aviation", "value": 0.788520 },
+          { "name": "Ground Transport", "value": 2.433968 },
+          { "name": "Industry", "value": 34.066378 },
+          { "name": "Power", "value": 30.003135 },
+          { "name": "Residential", "value": 0.005312 }
+        ]
+      },
+      {
+        "name": "Shanghai",
+        "children": [
+          { "name": "Aviation", "value": 0.306796 },
+          { "name": "Ground Transport", "value": 2.603797 },
+          { "name": "Industry", "value": 4.185970 },
+          { "name": "Power", "value": 2.911537 },
+          { "name": "Residential", "value": 0.000000 }
+        ]
+      },
+      {
+        "name": "Zhejiang",
+        "children": [
+          { "name": "Aviation", "value": 0.520841 },
+          { "name": "Ground Transport", "value": 2.444916 },
+          { "name": "Industry", "value": 14.711595 },
+          { "name": "Power", "value": 14.960678 },
+          { "name": "Residential", "value": 0.000000 }
+        ]
+      }
+    ]
+  },
+  "2024-06": {
+    "name": "2024-06",
+    "children": [
+      {
+        "name": "Jiangsu",
+        "children": [
+          { "name": "Aviation", "value": 0.772049 },
+          { "name": "Ground Transport", "value": 2.340721 },
+          { "name": "Industry", "value": 33.183398 },
+          { "name": "Power", "value": 29.995717 },
+          { "name": "Residential", "value": 0.005030 }
+        ]
+      },
+      {
+        "name": "Shanghai",
+        "children": [
+          { "name": "Aviation", "value": 0.300388 },
+          { "name": "Ground Transport", "value": 2.532586 },
+          { "name": "Industry", "value": 3.909560 },
+          { "name": "Power", "value": 2.617538 },
+          { "name": "Residential", "value": 0.000000 }
+        ]
+      },
+      {
+        "name": "Zhejiang",
+        "children": [
+          { "name": "Aviation", "value": 0.509961 },
+          { "name": "Ground Transport", "value": 2.373158 },
+          { "name": "Industry", "value": 13.674761 },
+          { "name": "Power", "value": 12.924022 },
+          { "name": "Residential", "value": 0.000000 }
+        ]
+      }
+    ]
+  },
+  "2024-07": {
+    "name": "2024-07",
+    "children": [
+      {
+        "name": "Jiangsu",
+        "children": [
+          { "name": "Aviation", "value": 0.869615 },
+          { "name": "Ground Transport", "value": 2.415264 },
+          { "name": "Industry", "value": 31.484397 },
+          { "name": "Power", "value": 36.083848 },
+          { "name": "Residential", "value": 0.004964 }
+        ]
+      },
+      {
+        "name": "Shanghai",
+        "children": [
+          { "name": "Aviation", "value": 0.339273 },
+          { "name": "Ground Transport", "value": 2.556399 },
+          { "name": "Industry", "value": 3.972149 },
+          { "name": "Power", "value": 4.760884 },
+          { "name": "Residential", "value": 0.000000 }
+        ]
+      },
+      {
+        "name": "Zhejiang",
+        "children": [
+          { "name": "Aviation", "value": 0.570119 },
+          { "name": "Ground Transport", "value": 2.422467 },
+          { "name": "Industry", "value": 12.636776 },
+          { "name": "Power", "value": 20.151232 },
+          { "name": "Residential", "value": 0.000000 }
+        ]
+      }
+    ]
+  },
+  "2024-08": {
+    "name": "2024-08",
+    "children": [
+      {
+        "name": "Jiangsu",
+        "children": [
+          { "name": "Aviation", "value": 0.882509 },
+          { "name": "Ground Transport", "value": 2.387158 },
+          { "name": "Industry", "value": 31.679676 },
+          { "name": "Power", "value": 40.481241 },
+          { "name": "Residential", "value": 0.004947 }
+        ]
+      },
+      {
+        "name": "Shanghai",
+        "children": [
+          { "name": "Aviation", "value": 0.344305 },
+          { "name": "Ground Transport", "value": 2.521223 },
+          { "name": "Industry", "value": 4.118233 },
+          { "name": "Power", "value": 5.505363 },
+          { "name": "Residential", "value": 0.000000 }
+        ]
+      },
+      {
+        "name": "Zhejiang",
+        "children": [
+          { "name": "Aviation", "value": 0.578579 },
+          { "name": "Ground Transport", "value": 2.429482 },
+          { "name": "Industry", "value": 12.421643 },
+          { "name": "Power", "value": 21.140466 },
+          { "name": "Residential", "value": 0.000000 }
+        ]
+      }
+    ]
+  },
+  "2024-09": {
+    "name": "2024-09",
+    "children": [
+      {
+        "name": "Jiangsu",
+        "children": [
+          { "name": "Aviation", "value": 0.773197 },
+          { "name": "Ground Transport", "value": 2.350065 },
+          { "name": "Industry", "value": 32.189289 },
+          { "name": "Power", "value": 33.436514 },
+          { "name": "Residential", "value": 0.005242 }
+        ]
+      },
+      {
+        "name": "Shanghai",
+        "children": [
+          { "name": "Aviation", "value": 0.301659 },
+          { "name": "Ground Transport", "value": 2.601597 },
+          { "name": "Industry", "value": 4.154012 },
+          { "name": "Power", "value": 4.647076 },
+          { "name": "Residential", "value": 0.000000 }
+        ]
+      },
+      {
+        "name": "Zhejiang",
+        "children": [
+          { "name": "Aviation", "value": 0.506912 },
+          { "name": "Ground Transport", "value": 2.383040 },
+          { "name": "Industry", "value": 12.908900 },
+          { "name": "Power", "value": 19.127089 },
+          { "name": "Residential", "value": 0.000000 }
+        ]
+      }
+    ]
+  },
+  "2024-10": {
+    "name": "2024-10",
+    "children": [
+      {
+        "name": "Jiangsu",
+        "children": [
+          { "name": "Aviation", "value": 0.826296 },
+          { "name": "Ground Transport", "value": 2.432844 },
+          { "name": "Industry", "value": 32.009478 },
+          { "name": "Power", "value": 28.015781 },
+          { "name": "Residential", "value": 0.006602 }
+        ]
+      },
+      {
+        "name": "Shanghai",
+        "children": [
+          { "name": "Aviation", "value": 0.325236 },
+          { "name": "Ground Transport", "value": 2.603413 },
+          { "name": "Industry", "value": 4.302197 },
+          { "name": "Power", "value": 3.072759 },
+          { "name": "Residential", "value": 0.000000 }
+        ]
+      },
+      {
+        "name": "Zhejiang",
+        "children": [
+          { "name": "Aviation", "value": 0.543582 },
+          { "name": "Ground Transport", "value": 2.455585 },
+          { "name": "Industry", "value": 13.295006 },
+          { "name": "Power", "value": 16.118658 },
+          { "name": "Residential", "value": 0.000000 }
+        ]
+      }
+    ]
+  },
+  "2024-11": {
+    "name": "2024-11",
+    "children": [
+      {
+        "name": "Jiangsu",
+        "children": [
+          { "name": "Aviation", "value": 0.779918 },
+          { "name": "Ground Transport", "value": 2.344466 },
+          { "name": "Industry", "value": 33.248062 },
+          { "name": "Power", "value": 29.016872 },
+          { "name": "Residential", "value": 0.008972 }
+        ]
+      },
+      {
+        "name": "Shanghai",
+        "children": [
+          { "name": "Aviation", "value": 0.306976 },
+          { "name": "Ground Transport", "value": 2.529312 },
+          { "name": "Industry", "value": 4.081684 },
+          { "name": "Power", "value": 3.281406 },
+          { "name": "Residential", "value": 0.000000 }
+        ]
+      },
+      {
+        "name": "Zhejiang",
+        "children": [
+          { "name": "Aviation", "value": 0.513067 },
+          { "name": "Ground Transport", "value": 2.370677 },
+          { "name": "Industry", "value": 13.072866 },
+          { "name": "Power", "value": 16.002278 },
+          { "name": "Residential", "value": 0.000000 }
+        ]
+      }
+    ]
+  },
+  "2024-12": {
+    "name": "2024-12",
+    "children": [
+      {
+        "name": "Jiangsu",
+        "children": [
+          { "name": "Aviation", "value": 0.797534 },
+          { "name": "Ground Transport", "value": 2.336771 },
+          { "name": "Industry", "value": 31.828087 },
+          { "name": "Power", "value": 32.984167 },
+          { "name": "Residential", "value": 0.013434 }
+        ]
+      },
+      {
+        "name": "Shanghai",
+        "children": [
+          { "name": "Aviation", "value": 0.313913 },
+          { "name": "Ground Transport", "value": 2.486035 },
+          { "name": "Industry", "value": 4.334492 },
+          { "name": "Power", "value": 4.367305 },
+          { "name": "Residential", "value": 0.000000 }
+        ]
+      },
+      {
+        "name": "Zhejiang",
+        "children": [
+          { "name": "Aviation", "value": 0.524662 },
+          { "name": "Ground Transport", "value": 2.351887 },
+          { "name": "Industry", "value": 13.316677 },
+          { "name": "Power", "value": 18.871052 },
+          { "name": "Residential", "value": 0.000000 }
+        ]
+      }
+    ]
+  }
+}
+
+//旭日图数据格式为：{ name: 名称, children: {name: 名称, children: {....} }} }

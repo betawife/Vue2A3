@@ -55,10 +55,10 @@ export default {
   data() {
     return {
       tabs: [
-        { id: 'dashboard', name: '仪表板', icon: 'icon-dashboard' },
+        { id: 'dashboard', name: '仪表盘', icon: 'icon-dashboard' },
         { id: 'carbon-map', name: '碳排放地图', icon: 'icon-map' },
         { id: 'transportation', name: '交通对比', icon: 'icon-transport' },
-        { id: 'trends', name: '趋势分析', icon: 'icon-trend' },
+        { id: 'sunburst', name: '贡献比例', icon: 'icon-trend' },
         { id: 'carbon-account', name: '碳账户', icon: 'icon-account' },
         { id: 'settings', name: '设置', icon: 'icon-settings' }
       ]
@@ -202,7 +202,7 @@ export default {
 .icon-dashboard:before { content: "📊"; }
 .icon-map:before { content: "🗺️"; }
 .icon-transport:before { content: "🚗"; }
-.icon-trend:before { content: "📈"; }
+.icon-sunburst:before { content: "📈"; }
 .icon-account:before { content: "👤"; }
 .icon-settings:before { content: "⚙️"; }
 .icon-earth:before { content: "🌎"; }
