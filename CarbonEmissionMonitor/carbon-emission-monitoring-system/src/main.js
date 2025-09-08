@@ -1,9 +1,14 @@
 import { createApp } from 'vue'
 import App from './App.vue'
 import 'lib-flexible/flexible.js'
-import mitt from 'mitt'
+import mitt from 'mitt' 
+
+// 创建事件总线
+export const eventBus = mitt()
 
 const app = createApp(App)
+
+// 提供事件总线给所有组件
+app.provide('eventBus', eventBus)
+
 app.mount('#app')
-const eventBus = mitt(); // 创建全局事件
-export default eventBus;

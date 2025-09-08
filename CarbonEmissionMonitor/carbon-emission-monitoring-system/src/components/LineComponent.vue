@@ -1,33 +1,27 @@
 <template>
-  <div class="sunburst-component">
+  <div class="line-component">
     <div class="component-header">
-      <h3>碳排放旭日图</h3>
-      <p>碳排来源分布分析</p>
+      <h3>碳排放趋势图</h3>
+      <p>历史碳排变化趋势</p>
     </div>
     <div class="chart-placeholder">
-      <i class="icon-sunburst"></i>
-      <span>旭日图加载中...</span>
+      <i class="icon-trend"></i>
+      <span>趋势图加载中...</span>
     </div>
   </div>
 </template>
 
 <script>
-import { onMounted } from 'vue';
-
 export default {
-  name: 'SunBurst',
+  name: 'LineComponent',
   setup() {
-    onMounted(() => {
-      // 初始化逻辑
-    });
-    
     return {};
   }
-};
+}
 </script>
 
 <style scoped>
-.sunburst-component {
+.line-component {
   height: 100%;
   display: flex;
   flex-direction: column;
@@ -60,8 +54,8 @@ export default {
   color: #6c757d;
 }
 
-.icon-sunburst:before {
-  content: "☀️";
+.icon-trend:before {
+  content: "📉";
   font-size: 40px;
   margin-bottom: 10px;
 }

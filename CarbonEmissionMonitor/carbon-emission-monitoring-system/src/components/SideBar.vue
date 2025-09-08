@@ -45,7 +45,7 @@ export default {
   props: {
     activeTab: {
       type: String,
-      default: 'dashboard'
+      default: 'carbon-charts'
     },
     collapsed: {
       type: Boolean,
@@ -55,10 +55,8 @@ export default {
   data() {
     return {
       tabs: [
-        { id: 'dashboard', name: '仪表盘', icon: 'icon-dashboard' },
-        { id: 'carbon-map', name: '碳排放地图', icon: 'icon-map' },
-        { id: 'transportation', name: '交通对比', icon: 'icon-transport' },
-        { id: 'sunburst', name: '贡献比例', icon: 'icon-trend' },
+        { id: 'carbon-charts', name: '碳排可视化', icon: 'icon-charts' },
+        { id: 'dashboard', name: '我的仪表盘', icon: 'icon-dashboard' },
         { id: 'carbon-account', name: '碳账户', icon: 'icon-account' },
         { id: 'settings', name: '设置', icon: 'icon-settings' }
       ]
@@ -199,10 +197,8 @@ export default {
 }
 
 /* 图标字体样式 */
+.icon-charts:before { content: "🗺️"; }
 .icon-dashboard:before { content: "📊"; }
-.icon-map:before { content: "🗺️"; }
-.icon-transport:before { content: "🚗"; }
-.icon-sunburst:before { content: "📈"; }
 .icon-account:before { content: "👤"; }
 .icon-settings:before { content: "⚙️"; }
 .icon-earth:before { content: "🌎"; }

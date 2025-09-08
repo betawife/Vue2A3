@@ -36,8 +36,7 @@
 <script>
 import SideBar from './SideBar.vue'
 import DashboardComponent from './DashboardComponent.vue'
-import CarbonMap from './CarbonMap.vue'
-import TransportationComponent from './TransportationComponent.vue'
+import CarbonEmissionCharts from './CarbonEmissionCharts.vue'
 import SunBurst from './SunBurst.vue'
 import CarbonAccount from './CarbonAccount.vue'
 import SettingsComponent from './SettingsComponent.vue'
@@ -47,41 +46,29 @@ export default {
   components: {
     SideBar,
     DashboardComponent,
-    CarbonMap,
-    TransportationComponent,
+    CarbonEmissionCharts,
     SunBurst,
     CarbonAccount,
     SettingsComponent
   },
   data() {
     return {
-      activeTab: 'dashboard',
+      activeTab: 'carbon-charts', 
       sidebarCollapsed: false,
       // 定义侧边栏的标签和对应的组件
       tabs: [
+        
+        { 
+          id: 'carbon-charts', 
+          name: '碳排可视化', 
+          icon: 'icon-charts',
+          component: CarbonEmissionCharts
+        },
         { 
           id: 'dashboard', 
-          name: '仪表盘', 
+          name: '我的仪表盘', 
           icon: 'icon-dashboard',
           component: DashboardComponent
-        },
-        { 
-          id: 'carbon-map', 
-          name: '碳排放地图', 
-          icon: 'icon-map',
-          component: CarbonMap
-        },
-        { 
-          id: 'transportation', 
-          name: '交通对比', 
-          icon: 'icon-transport',
-          component: TransportationComponent
-        },
-        { 
-          id: 'sunburst', 
-          name: '贡献占比', 
-          icon: 'icon-trend',
-          component: SunBurst
         },
         { 
           id: 'carbon-account', 
@@ -102,11 +89,11 @@ export default {
     // 根据 activeTab 动态加载组件currentComponent
     currentComponent() {
       const tab = this.tabs.find(t => t.id === this.activeTab);
-      return tab ? tab.component : DashboardComponent; 
+      return tab ? tab.component : CarbonEmissionCharts; 
     },
     currentPageTitle() {
       const tab = this.tabs.find(t => t.id === this.activeTab)
-      return tab ? tab.name : '仪表盘'
+      return tab ? tab.name : '碳排可视化'
     }
   },
   methods: {

@@ -1,33 +1,27 @@
 <template>
-  <div class="sunburst-component">
+  <div class="radar-component">
     <div class="component-header">
-      <h3>碳排放旭日图</h3>
-      <p>碳排来源分布分析</p>
+      <h3>碳排放分析雷达图</h3>
+      <p>多维度碳排分析</p>
     </div>
     <div class="chart-placeholder">
-      <i class="icon-sunburst"></i>
-      <span>旭日图加载中...</span>
+      <i class="icon-radar"></i>
+      <span>雷达图加载中...</span>
     </div>
   </div>
 </template>
 
 <script>
-import { onMounted } from 'vue';
-
 export default {
-  name: 'SunBurst',
+  name: 'RadarComponent',
   setup() {
-    onMounted(() => {
-      // 初始化逻辑
-    });
-    
     return {};
   }
-};
+}
 </script>
 
 <style scoped>
-.sunburst-component {
+.radar-component {
   height: 100%;
   display: flex;
   flex-direction: column;
@@ -60,8 +54,8 @@ export default {
   color: #6c757d;
 }
 
-.icon-sunburst:before {
-  content: "☀️";
+.icon-radar:before {
+  content: "📈";
   font-size: 40px;
   margin-bottom: 10px;
 }

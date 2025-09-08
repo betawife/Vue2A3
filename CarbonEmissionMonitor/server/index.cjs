@@ -1,4 +1,4 @@
-import express from 'express';
+let express = require('express');
 let app = express();
 const port = 8888;
 
@@ -20,9 +20,9 @@ app.use(express.json()); // 解析 JSON 请求体
 app.use(express.urlencoded({ extended: true }));
 
 //引用路由文件
-
+let Map =require("./router/Map.cjs");
 //中间件配置各路由
-
+app.use('/map',Map);
 
 //监听端口
 app.listen(port,()=>{

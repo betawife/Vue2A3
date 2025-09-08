@@ -1,4 +1,4 @@
-export const sunBurstData = {
+{
   "2024-01": {
     "name": "2024-01",
     "children": [
@@ -420,5 +420,3 @@ export const sunBurstData = {
     ]
   }
 }
-
-//旭日图数据格式为：{ name: 名称, children: {name: 名称, children: {....} }} }
