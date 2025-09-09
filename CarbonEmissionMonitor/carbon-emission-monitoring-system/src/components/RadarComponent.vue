@@ -4,6 +4,7 @@
       <h3>碳排放分析雷达图</h3>
       <p>多维度碳排分析</p>
     </div>
+    <!--占位标签在完成后记得注释，免得占位 -->
     <div class="chart-placeholder">
       <i class="icon-radar"></i>
       <span>雷达图加载中...</span>

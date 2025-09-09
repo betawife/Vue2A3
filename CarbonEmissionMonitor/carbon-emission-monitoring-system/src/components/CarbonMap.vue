@@ -2,7 +2,7 @@
   <section id="map">
     <div class="map-header">
       <h2>长三角碳排放监测</h2>
-      <p>实时碳排放数据可视化</p>
+      <p>实时碳排放数据可视化（数据来源：carbonmonitor.org.cn）</p>
     </div>
     <div ref="chartContainer" class="chart-container"></div>
   </section>
@@ -10,7 +10,7 @@
 
 <script>
 import Mapdatav from '../assets/mapdatav.geojson';
-import {inject, onMounted, reactive, ref, nextTick, onUnmounted} from 'vue';
+import {inject, onMounted, reactive, ref, nextTick, onUnmounted,watch} from 'vue';
 
 export default {
   name:'CarbonMap',
@@ -24,7 +24,11 @@ export default {
     let ScatterData = reactive({});
     let currentmonthData = ref([]);
     let currentMonth = ref('01');
-    
+    // 注入主题对象
+    const theme = inject('theme'); // 响应式主题名称 ('green' 或 'lowCarbon')
+    const greenEcologyTheme = inject('greenEcologyTheme'); 
+    const lowCarbonTheme = inject('lowCarbonTheme'); 
+
     //监听月份变化的事件总线
     eventBus.on('monthChanged', (newMonth) => {
       currentMonth.value = newMonth;
@@ -65,8 +69,8 @@ export default {
     // 初始化图表
     function initChart() {
       if (!chartContainer.value) return;
-      
-      const myChart = $echarts.init(chartContainer.value);
+      const currentThemeConfig = theme.value === 'green' ? greenEcologyTheme : lowCarbonTheme;
+      const myChart = $echarts.init(chartContainer.value,currentThemeConfig);
       $echarts.registerMap('Map', Mapdatav);
       
       // 减碳主题配色 - 绿色系
@@ -78,13 +82,13 @@ export default {
           left: '3%',
           right: '4%',
           bottom: '3%',
-          top: '60px',
+          top: '10%',
           containLabel: true
         },
         title: {
           text: `2024年${currentMonth.value}月碳排放分布`,
           left: 'center',
-          top: 10,
+          top: 0,
           textStyle: {
             color: '#2e7d32',
             fontSize: 16,
@@ -207,7 +211,14 @@ export default {
         myChart.resize();
       };
       window.addEventListener('resize', resizeHandler);
-      
+      // 监听主题变化
+      watch(theme, () => {
+        // 主题变化时重新初始化图表
+        if (myChart) {
+          myChart.dispose();
+          initChart();
+        }
+      });
       // 返回清理函数
       return () => {
         window.removeEventListener('resize', resizeHandler);

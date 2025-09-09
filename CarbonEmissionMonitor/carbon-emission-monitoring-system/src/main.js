@@ -2,7 +2,6 @@ import { createApp } from 'vue'
 import App from './App.vue'
 import 'lib-flexible/flexible.js'
 import mitt from 'mitt' 
-
 // 创建事件总线
 export const eventBus = mitt()
 
