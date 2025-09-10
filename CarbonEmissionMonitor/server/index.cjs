@@ -22,9 +22,13 @@ app.use(express.urlencoded({ extended: true }));
 //引用路由文件
 let Map =require("./router/Map.cjs");
 let SunBurst =require("./router/SunBurst.cjs")
+let Radar =require('./router/Radar.cjs')
+let Line =require('./router/Line.cjs')
 //中间件配置各路由
 app.use('/map',Map);
 app.use('/sunburst',SunBurst);
+app.use('/radar',Radar);
+app.use('/line',Line);
 //监听端口
 app.listen(port,()=>{
   console.log(`服务已启动，端口${port}监听中...`)

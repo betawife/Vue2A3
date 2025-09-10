@@ -137,7 +137,6 @@ export default {
   name: 'DashBoard',
   setup() {
     const $echarts = inject('echarts');
-    const eventBus = inject('eventBus');
     const chartContainer = ref(null);
     let DashboardData = reactive({ value: 0 });
     let myChart = ref(null);
@@ -191,8 +190,15 @@ export default {
                            walkingBikingEmission + applianceEmission + 
                            waterHeaterEmission;
       
+       // 添加日期时间戳
+      const today = new Date().toISOString().split('T')[0];
+      const dataToStore = {
+        date: today,
+        value: DashboardData.value
+      };
+      localStorage.setItem('todayCarbonEmission', JSON.stringify(dataToStore));                     
       updateChart();
-      eventBus.emit('carbonCalculated', DashboardData.value);  //传播碳计算结果，给日历更新
+      
     }
     
     function getEmissionLevel(value) {

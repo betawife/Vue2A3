@@ -2,7 +2,7 @@
   <div class="sunburst-component">
     <div class="component-header">
       <h3>碳排放旭日图</h3>
-      <p>碳排来源分布</p>
+      <p>碳排来源分布 - 三地区组成</p>
     </div>
     <div ref="chartContainer" class="chart-container"></div>
   </div>
@@ -40,7 +40,7 @@ export default {
     async function getSunBurstData(){
       try {
         const response = await $axios.get('/sunburst/data');
-        console.log('API响应数据:', response.data);
+        // console.log('API响应数据:', response.data);
         Object.assign(SunburstData, response.data.SunBurstData);
         disposeData(currentMonth.value);
         return true;
@@ -77,7 +77,7 @@ export default {
           containLabel: true
         },
         title: {
-          text: `2024年${currentMonth.value}月各行业碳排占比`,
+          text: `2024-${currentMonth.value}月三地区碳排放组成`,
           left: 'center',
           bottom:0,
           textStyle: {
@@ -212,6 +212,7 @@ export default {
 
 .chart-container {
   flex: 1;
-  min-height: 300px;
+  min-height: 400px;
+  width: 100%;
 }
 </style>
