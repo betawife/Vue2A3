@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <HomePage />
+    <router-view ></router-view>
   </div>
 </template>
 
@@ -12,17 +12,11 @@ import {provide,ref } from 'vue';
 import {greenEcologyTheme} from './assets/green-ecology-theme.js';
 import {lowCarbonTheme} from './assets/low-carbon-theme.js'
 
-import HomePage from './components/HomePage.vue';
-
-//设置基准路径
-axios.defaults.baseURL = 'http://localhost:8888';
+//设置axios基准路径
+axios.defaults.baseURL = 'http://localhost:8888/';
 export default {
   name: 'App',
 
-  components: {
-    HomePage
-  },
-  
 setup() {
   const theme = ref(localStorage.getItem('appTheme') || 'green');
 
@@ -37,7 +31,3 @@ setup() {
   
 }
 </script>
-
-<style>
-
-</style>

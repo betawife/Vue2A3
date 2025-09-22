@@ -2,8 +2,6 @@
   <div class="home-container">
     <!-- 侧边分页栏 -->
     <SideBar 
-      :active-tab="activeTab"   
-      @tab-change="handleTabChange"
       :collapsed="sidebarCollapsed"
       @toggle-collapse="sidebarCollapsed = !sidebarCollapsed"
     />
@@ -26,7 +24,7 @@
       <!-- 内容展示区域 -->
       <div class="content-area">
         <div class="component-container">
-          <component :is="currentComponent" />
+          <router-view />
         </div>
       </div>
     </main>
@@ -34,73 +32,32 @@
 </template>
 
 <script>
-import SideBar from './SideBar.vue'
-import DashboardComponent from './DashboardComponent.vue'
-import CarbonEmissionCharts from './CarbonEmissionCharts.vue'
-import SunBurst from './SunBurst.vue'
-import CarbonAccount from './CarbonAccount.vue'
-import SettingsComponent from './SettingsComponent.vue'
+import SideBar from '../components/SideBar.vue'
 
 export default {
   name: 'HomePage',
   components: {
-    SideBar,
-    DashboardComponent,
-    CarbonEmissionCharts,
-    SunBurst,
-    CarbonAccount,
-    SettingsComponent
+    SideBar
   },
   data() {
     return {
-      activeTab: 'carbon-charts', 
       sidebarCollapsed: false,
-      // 定义侧边栏的标签和对应的组件
-      tabs: [
-        
-        { 
-          id: 'carbon-charts', 
-          name: '碳排可视化', 
-          icon: 'icon-charts',
-          component: CarbonEmissionCharts
-        },
-        { 
-          id: 'dashboard', 
-          name: '我的仪表盘', 
-          icon: 'icon-dashboard',
-          component: DashboardComponent
-        },
-        { 
-          id: 'carbon-account', 
-          name: '碳账户', 
-          icon: 'icon-account',
-          component: CarbonAccount
-        },
-        { 
-          id: 'settings', 
-          name: '设置', 
-          icon: 'icon-settings',
-          component: SettingsComponent
-        }
-      ]
     }
   },
   computed: {
-    // 根据 activeTab 动态加载组件currentComponent
-    currentComponent() {
-      const tab = this.tabs.find(t => t.id === this.activeTab);
-      return tab ? tab.component : CarbonEmissionCharts; 
-    },
     currentPageTitle() {
-      const tab = this.tabs.find(t => t.id === this.activeTab)
-      return tab ? tab.name : '碳排可视化'
-    }
-  },
-  methods: {
-    //侧边栏触发事件，传参tabId
-    handleTabChange(tabId) {
-      this.activeTab = tabId //更新当前激活的标签
-    }
+    // 处理嵌套路由的标题显示
+    const routeName = this.$route.name;
+    const routeTitles = {
+      'EnergyCarbonCharts': '能源与碳排图表',
+      'CarbonEmissionCharts': '碳排放图表',
+      'EnergyConsumptionCharts': '能源消耗图表',
+      'Dashboard': '我的仪表盘',
+      'CarbonAccount': '碳账户',
+      'Settings': '设置'
+    };
+    return routeTitles[routeName] || '能源与碳排图表';
+  }
   }
 }
 </script>
