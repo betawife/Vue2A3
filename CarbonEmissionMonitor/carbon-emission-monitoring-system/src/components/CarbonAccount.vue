@@ -4,7 +4,7 @@
       <div class="prompt-content">
         <h3>请先登录</h3>
         <p>登录后查看您的碳账户数据</p>
-        <button class="login-btn" @click="emitOpenLogin">立即登录</button>
+        <!-- <button class="login-btn" @click="emitOpenLogin">立即登录</button> -->
       </div>
     </div>
     

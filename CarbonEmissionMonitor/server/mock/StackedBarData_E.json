@@ -1,0 +1,48 @@
+{
+  "months": ["01", "02", "03", "04", "05", "06", "07", "08", "09", "10", "11","12"],
+
+  "jiangsu": [
+    { "coal": 1200, "electricity": 850, "gas": 400, "oil": 300, "newEnergy": 100 }, 
+    { "coal": 1100, "electricity": 800, "gas": 380, "oil": 280, "newEnergy": 90 },  
+    { "coal": 1250, "electricity": 880, "gas": 420, "oil": 310, "newEnergy": 120 }, 
+    { "coal": 1260, "electricity": 890, "gas": 430, "oil": 320, "newEnergy": 120 }, 
+    { "coal": 1280, "electricity": 920, "gas": 450, "oil": 330, "newEnergy": 130 }, 
+    { "coal": 1300, "electricity": 950, "gas": 470, "oil": 340, "newEnergy": 140 }, 
+    { "coal": 1320, "electricity": 980, "gas": 480, "oil": 350, "newEnergy": 150 }, 
+    { "coal": 1350, "electricity": 990, "gas": 490, "oil": 360, "newEnergy": 160 }, 
+    { "coal": 1280, "electricity": 960, "gas": 470, "oil": 340, "newEnergy": 150 }, 
+    { "coal": 1220, "electricity": 920, "gas": 450, "oil": 330, "newEnergy": 140 },
+    { "coal": 1180, "electricity": 890, "gas": 430, "oil": 320, "newEnergy": 130 },
+    { "coal": 1150, "electricity": 850, "gas": 420, "oil": 310, "newEnergy": 120 } 
+  ],
+  
+  "zhejiang": [
+    { "coal": 700, "electricity": 550, "gas": 250, "oil": 120, "newEnergy": 60 },  
+    { "coal": 650, "electricity": 500, "gas": 230, "oil": 110, "newEnergy": 60 },  
+    { "coal": 720, "electricity": 560, "gas": 260, "oil": 130, "newEnergy": 80 },  
+    { "coal": 730, "electricity": 570, "gas": 270, "oil": 135, "newEnergy": 75 },  
+    { "coal": 750, "electricity": 590, "gas": 280, "oil": 140, "newEnergy": 90 },  
+    { "coal": 770, "electricity": 610, "gas": 290, "oil": 145, "newEnergy": 95 },  
+    { "coal": 780, "electricity": 630, "gas": 300, "oil": 150, "newEnergy": 100 }, 
+    { "coal": 790, "electricity": 640, "gas": 310, "oil": 155, "newEnergy": 105 }, 
+    { "coal": 760, "electricity": 620, "gas": 290, "oil": 145, "newEnergy": 100 }, 
+    { "coal": 730, "electricity": 590, "gas": 280, "oil": 140, "newEnergy": 95 }, 
+    { "coal": 710, "electricity": 570, "gas": 270, "oil": 135, "newEnergy": 90 }, 
+    { "coal": 690, "electricity": 550, "gas": 260, "oil": 130, "newEnergy": 85 }  
+  ],
+  
+  "shanghai": [
+    { "coal": 350, "electricity": 300, "gas": 150, "oil": 80, "newEnergy": 40 },  
+    { "coal": 320, "electricity": 280, "gas": 140, "oil": 70, "newEnergy": 40 },  
+    { "coal": 360, "electricity": 310, "gas": 160, "oil": 85, "newEnergy": 50 },  
+    { "coal": 370, "electricity": 320, "gas": 165, "oil": 90, "newEnergy": 55 },  
+    { "coal": 380, "electricity": 330, "gas": 170, "oil": 95, "newEnergy": 60 },  
+    { "coal": 390, "electricity": 340, "gas": 175, "oil": 100, "newEnergy": 65 }, 
+    { "coal": 400, "electricity": 350, "gas": 180, "oil": 105, "newEnergy": 70 }, 
+    { "coal": 410, "electricity": 360, "gas": 185, "oil": 110, "newEnergy": 75 }, 
+    { "coal": 390, "electricity": 340, "gas": 175, "oil": 100, "newEnergy": 70 }, 
+    { "coal": 370, "electricity": 330, "gas": 170, "oil": 95, "newEnergy": 65 }, 
+    { "coal": 360, "electricity": 320, "gas": 165, "oil": 90, "newEnergy": 60 }, 
+    { "coal": 350, "electricity": 310, "gas": 160, "oil": 85, "newEnergy": 55 }  
+  ]
+}

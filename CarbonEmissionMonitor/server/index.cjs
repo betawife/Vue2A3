@@ -24,11 +24,21 @@ let Map =require("./router/Map.cjs");
 let SunBurst =require("./router/SunBurst.cjs")
 let Radar =require('./router/Radar.cjs')
 let Line =require('./router/Line.cjs')
+
+let Pie_E =require('./router/Pie_E.cjs')
+let Line_E =require('./router/Line_E.cjs')
+let Line_EC =require('./router/Line_EC.cjs')
+let StackedBar_E =require('./router/StackedBar_E.cjs')
 //中间件配置各路由
 app.use('/map',Map);
 app.use('/sunburst',SunBurst);
 app.use('/radar',Radar);
 app.use('/line',Line);
+
+app.use('/pie_E',Pie_E);
+app.use('/line_E',Line_E);
+app.use('/line_EC',Line_EC);
+app.use('/stackedbar_E',StackedBar_E);
 //监听端口
 app.listen(port,()=>{
   console.log(`服务已启动，端口${port}监听中...`)
